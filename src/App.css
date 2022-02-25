@@ -1,38 +1,187 @@
-.App {
-  text-align: center;
+
+#sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 300px;
+  transition: all ease-in-out 0.5s !important;
+  z-index: 9997;
+  transition: all 0.5s !important;
+  padding: 0 15px;
+  background: #040b14;
+  overflow-y: auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.body-content {
+  margin-left: 300px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+#toggle-icon{
+  position: fixed;
+  right: 15px;
+  top: 15px;
+  z-index: 9998;
+  border: 0;
+  font-size: 20px;
+  transition: all 0.4s;
+  outline: none !important;
+  background-color: #149ddd;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  /* display: inline-flex; */
+  display: none;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  line-height: 0;
+  border-radius: 50px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+
+
+#home {
+  background: url("./components/Banner/hero.jpg") top center;
+  background-size: cover;
+  position: relative;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+#home:before {
+  content: "";
+  background-color:  'rgba(5, 13, 24, 0.3)' !important;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+#text-container{
+  position: relative;
+  z-index: 2;
+  min-width: 300px;
+}
+
+#service-icon-div{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  /* background-color:#37b3ed; */
+}
+
+#service-icon-div:hover{
+  background-color: white;
+  color: #37b3ed;
+}
+
+#img-container{
+  position: relative;
+}
+
+.project-overlay{
+  display: block;
+  position: fixed;
+  width: 33%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 2;
+  background-color: 'rgba(5, 13, 24, 0.3)' !important;
+}
+
+
+
+@media (max-width: 1199px) {
+  #sidebar {
+    left: -300px;
   }
-  to {
-    transform: rotate(360deg);
+  .body-content {
+    margin-left: 0;
   }
 }
+
+@media (max-width: 1250px) {
+  #text-container h1 {
+    font-size: 43px;
+    line-height: 46px;
+  }
+  #text-container h2 {
+    font-size: 25px;
+    line-height: 26px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 1224px) {
+  #sidebar {
+    left: -300px;
+  }
+  .body-content {
+    margin-left: 0;
+    padding: 5px 30px;
+  }
+  #toggle-icon{
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    z-index: 9998;
+    border: 0;
+    font-size: 20px;
+    transition: all 0.4s;
+    outline: none !important;
+    background-color: #149ddd;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    line-height: 0;
+    border-radius: 50px;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 768px) {
+  .block-p {
+    display: block !important;
+    width: 100%;
+    padding: 20px;
+  }
+  .block {
+    display: block;
+    width: 80%;
+    margin: 20px auto;
+  }
+  .breadcrumbs ol li {
+    display: inline-block;
+  }
+}
+
+@media (min-width: 1224px) {
+  #home {
+    background-attachment: fixed;
+    background-size: cover;
+  }
+}
+
+@media (max-width: 768px) {
+  #text-container h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  #text-container h2 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+}
+
+
+

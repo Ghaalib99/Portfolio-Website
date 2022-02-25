@@ -8,7 +8,7 @@ import Contact from "./Contact/Contact"
 
 const Main = () => {
   return (
-    <div className="w-4/5 relative" style={{left:'20%'}}>
+    <div className="w-full relative">
         <Banner />
         <About />
         {/* <Skills /> */}

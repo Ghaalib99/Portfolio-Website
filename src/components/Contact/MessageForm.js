@@ -10,12 +10,12 @@ const MessageForm = () => {
     
     const handleSubmit = (event) => {
         event.preventDefault()
-        const data = {
-            name: nameRef.current.value,
-            email: emailRef.current.value,
-            subject: subjectRef.current.value,
-            message: messageRef.current.value
-        }
+        // const data = {
+        //     name: nameRef.current.value,
+        //     email: emailRef.current.value,
+        //     subject: subjectRef.current.value,
+        //     message: messageRef.current.value
+        // }
     }
 
 

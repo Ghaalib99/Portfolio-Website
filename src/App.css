@@ -11,6 +11,11 @@
   padding: 0 15px;
   background: #040b14;
   overflow-y: auto;
+  /* display: none; */
+}
+
+.toggle-off{
+  display: none;
 }
 
 .body-content {

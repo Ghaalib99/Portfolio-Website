@@ -4,7 +4,7 @@ import '../../App.css'
 
 const Banner = () => {
 
-  const myRef = document.querySelector('.scrollable-div')
+  // const myRef = document.querySelector('.scrollable-div')
   // const style = {
   //   backgroundImage: "url(/hero.jpg)",
   //   backgroundSize: 'cover',

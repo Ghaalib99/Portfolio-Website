@@ -8,18 +8,21 @@ import HorizontalSplitOutlinedIcon from '@mui/icons-material/HorizontalSplitOutl
 import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
 import MenuIcon from '@mui/icons-material/Menu';
 import Menu from './Menu';
+// import { useEffect, useState } from 'react'
+// import ReactDOM from 'react-dom'
 
 const Sidebar = () => {
+ 
   return (
     <>
-      <MenuIcon className='' id='toggle-icon' />
+      <MenuIcon className=''  />
       <div id='sidebar' className=''>
           <h1 className='text-lg text-white font-bold flex items-center justify-center mb-2 mt-4'>John Doe Chukwuemeka</h1>
           <div className='flex justify-center items-center'>
-            <a href="" className='text-center p-3 w-9 h-9 mr-3 flex justify-center items-center bg-gray-800 hover:bg-sky-600' style={{borderRadius:'50%'}}>
+            <a href="#" className='text-center p-3 w-9 h-9 mr-3 flex justify-center items-center bg-gray-800 hover:bg-sky-600' style={{borderRadius:'50%'}}>
               <TwitterIcon className='text-white text-base'/>
             </a>
-            <a href="" className='text-center p-3 w-9 h-9 flex justify-center items-center bg-gray-800 hover:bg-sky-600' style={{borderRadius:'50%'}}>
+            <a href="#" className='text-center p-3 w-9 h-9 flex justify-center items-center bg-gray-800 hover:bg-sky-600' style={{borderRadius:'50%'}}>
               <LinkedInIcon className='text-white text-base'/>
             </a>
             

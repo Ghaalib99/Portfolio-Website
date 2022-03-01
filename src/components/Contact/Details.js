@@ -11,7 +11,7 @@ const Details = (props) => {
             </div>
                 <div className="flex flex-col">
                     <h1 className="text-2xl mb-2 font-semibold">{props.title}</h1>
-                    <p><a>{props.value}</a></p>
+                    <p><a href='#'>{props.value}</a></p>
                 </div>
         </div>
         
